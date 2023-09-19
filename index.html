@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prova 3</title>
+    <style>
+        body{
+            background-color: rgb(0, 89, 255);
+            text-align: center;
+        }
+        button{
+            background-color: white;
+            color: black;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+        }
+
+        h1{
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        section{
+            background-color: white;
+            border: none;
+            border-radius: 10px;
+            color: black;
+            padding: 13px;
+        }
+        p.nome{
+            color: rgb(255, 255, 255);
+            font-family: Arial, Helvetica, sans-serif;
+            font-style: italic;
+        }
+        p#resultado{
+            color: black;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>SOMA</h1>
+        <button onclick="iniciar()">Início</button>
+    </header>
+    <br>
+    <section>
+        <p id="resultado"></p>
+    </section>
+    <footer><p class="nome">&copy; Rayssa Rodrigues Teixeira</p></footer>
+         <script>
+        function iniciar(){
+        let n1 = Number(window.prompt('Digite o primeiro número'))
+        let n2 = Number(window.prompt('Digite o segundo número'))
+        let n3=n1+n2
+        let res=window.document.getElementById('resultado')
+        res.innerHTML= `O resultado da soma é: <section> ${n3}`
+        }
+         </script>
+</body>
+</html>
